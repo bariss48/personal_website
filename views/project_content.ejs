@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> <%= project.title %> </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/default.css">
+	<style type="text/css">
+		.img-container{
+			max-width: 300px;
+		}
+		img{
+			width: 90%
+		}
+	</style>
+</head>
+<body>
+	<section class="s1">
+	<div class="intro-wrapper">
+		<div class="nav-wrapper">	
+			<!-- Link around dots-wrapper added after tutorial video -->
+			<a href="/projects">
+				<div class="dots-wrapper">
+					<div id="dot-1" class="browser-dot"></div>
+					<div id="dot-2" class="browser-dot"></div>
+					<div id="dot-3" class="browser-dot"></div>
+				</div>
+			</a>
+			<ul id="navigation">
+				<li><a href="/">Home</a></li>
+				<li><a href="">-</a></li>
+				<li><a href="/blogs">Blogs</a></li>
+				<li><a href="">-</a></li>
+				<li><a href="/projects">Projects</a></li>
+			</ul>
+		</div>
+		<div class="left-column">
+			<img id="profile_pic" src="<%= project.image_link %> ">
+		   <!--
+			<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+			<div id="theme-options-wrapper">
+				<div data-mode="light" id="light-mode" class="theme-dot"></div>
+				<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+				<div data-mode="green" id="green-mode" class="theme-dot"></div>
+				<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+			</div>
+			<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+			-->
+		</div>
+		<div class="right-column">
+			<div id="preview-shadow">
+				<div id="preview">
+					<div id="corner-tl" class="corner"></div>
+					<div id="corner-tr" class="corner"></div>
+					<h3> <%= project.title %> </h3>
+					<p>Date: <%= project.date %></p>
+					<p>Category: <%= project.genre %></p>
+					<p>Author: <%= project.author %></p>
+					<div id="corner-br" class="corner"></div>
+					<div id="corner-bl" class="corner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br></br>
+</section>
+	<section class="s1">	
+	<div class="main-container">
+		<p>Category: <%= project.genre %></p>
+		<h3> <%= project.title %> </h3>
+		<p><%= project.description %> </p>
+	</div>
+</section>
+</body>
+</html>

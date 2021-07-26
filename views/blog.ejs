@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baris Kara</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="/public/images/tv-2223047_640.png" />
+	<link rel="stylesheet" type="text/css" href="/css/default.css">
+		<style type="text/css">
+		.img-container{
+			max-width: 300px;
+		}
+		img{
+			width: 90%
+		}
+	</style>
+	<script src="https://kit.fontawesome.com/b4e7b901e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>printf("blogs");</h1>
+				<div class="social-menu">
+					<ul>
+                        <!--  
+					  <li><a href="https://twitter.com/berkbaris48"><i class="fa fa-twitter"></i></a></li>
+					  <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                      <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                      -->
+			  <li><a href="https://www.linkedin.com/in/baris-kara-a033211a4/"><i class="fa fa-linkedin"></i></a></li>
+					  <li><a href="https://github.com/bariss48"><i class="fa fa-github"></i></a></li>
+					  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=tr"><i class="fa fa-code"></i></a></li>
+					  <li><a href="https://www.javascript.com/"><i class="fab fa-js"></i></a></li>
+                      <li><a href="https://nodejs.org/en/"><i class="fab fa-node-js"></i></a></li>
+                      <li><a href="https://www.oracle.com/tr/java/technologies/javase-downloads.html"><i class="fab fa-java"></i></a></li>
+                      <li><a href="https://www.mongodb.com/"><i class="fas fa-database"></i></a></li>
+                      <!--
+					  <li><a href=""><i class="fab fa-java"></i></a></li>
+					  <li><a href=""><i class="fab fa-python"></i></a></li>
+					  <li><a href=""><i class="far fa-gem"></i></a></li>
+					  <li><a href=""><i class="fab fa-html5"></i></a></li>
+					  <li><a href=""><i class="fab fa-react"></i></a></li>
+					  <li><a href=""><i class="fab fa-git-alt"></i></a></li>
+					  <li><a href=""><i class="fas fa-database"></i></a></li>
+					  <li><a href=""><i class="fas fa-server"></i></a></li>
+					 -->
+					</ul>
+				  </div>
+			</div>
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
+					<!-- Link around dots-wrapper added after tutorial video -->
+					<a href="/">
+						<div class="dots-wrapper">
+							<div id="dot-1" class="browser-dot"></div>
+							<div id="dot-2" class="browser-dot"></div>
+							<div id="dot-3" class="browser-dot"></div>
+						</div>
+					</a>
+					<ul id="navigation">
+						<li><a href="/">Home</a></li>
+						<li><a href="">-</a></li>
+						<li><a href="/blogs">Blogs</a></li>
+						<li><a href="">-</a></li>
+						<li><a href="/projects">Projects</a></li>
+					</ul>
+				</div>
+			</div>
+                   <!--
+					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+				    <div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+                    <p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+                    -->
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">Recently Blogs</h3>
+			<div class="post-wrapper">
+				<% blogs.forEach((blog) => { %>
+				<div>
+				<div class="post">       
+							<a href="/blogs/<%= blog._id %> ">
+								<img id="profile_pic" src="<%= blog.image_link %> ">
+							</a>
+							<div class="post-preview">
+								<h6 class="post-title"><%= blog.title %></h6>
+								<p class="post-intro"><%= blog.intro  %></p>
+								<a href="/blogs/<%= blog._id %>">Read More</a>
+								<p class="post-intro"><%= blog.date  %></p>
+							</div>  
+				  </div>
+				</div>
+				<% })  %>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
