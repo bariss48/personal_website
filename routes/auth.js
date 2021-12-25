@@ -5,7 +5,7 @@ const User = require('../models/user');
 
 
 router.get("/signup", async (req,res) => {
-    res.render("sign_in");
+    res.redirect("/");
 });
 
 router.post('/signup', async (req, res) => {
@@ -38,8 +38,5 @@ router.post('/signup', async (req, res) => {
      req.logOut();
      res.redirect('/blogs');
  });
-
- 
-
 
 module.exports = router;

@@ -29,12 +29,32 @@
            <input type="text" class="form-control"  name="title" value="<%= blog.title %>">
          </div>
          <div class="form-group">
+          <label for="read_min">Read-Min</label>
+          <input type="text" class="form-control"  name="read_min" placeholder="read_min" value="<%= blog.read_min %>">
+         </div>
+         <div class="form-group">
+          <label for="github_link">Github Link</label>
+          <input type="text" class="form-control"  name="github_link" placeholder="Github_Link" value="<%= blog.github_link %> ">
+         </div>
+         <div class="form-group">
+          <label for="description">Description-2 </label>
+          <textarea class="form-control" name="description_2" id="text" rows="8" cols="80" placeholder="Description-2 text here.." value="<%= blog.description_2 %>" required></textarea>
+         </div>
+         <div class="form-group">
+          <label for="description">Code Area</label>
+          <textarea class="form-control" name="code" id="text" rows="8" cols="80" placeholder="Code Area.." value="<%= blog.code %>"required></textarea>
+         </div>
+         <div class="form-group">
+          <label for="description">Code Area-2</label>
+          <textarea class="form-control" name="code_2" id="text" rows="8" cols="80" placeholder="Code Area-2 text here.." value="<%= blog.code_2 %>" required></textarea>
+         </div>
+         <div class="form-group">
           <label for="intro" >Intro</label>
           <input type="text" class="form-control"  name="intro" value="<%= blog.intro %>">
         </div>
          <div class="form-group">
           <label for="description" >Description</label>
-          <textarea class="form-control" name="description" id="text" rows="8" cols="80" placeholder="Description text here.." value="blog.description" required></textarea>
+          <textarea class="form-control" name="description" id="text" rows="8" cols="80" placeholder="Description text here.." value="<%= blog.description %>" required></textarea>
          </div>
         <div class="form-group">
           <label for="author" >Author</label>
@@ -53,6 +73,12 @@
                  <option <%= blog.genre === 'JavaScript' ? 'selected' : '' %>>JavaScript</option>
                  <option <%= blog.genre === 'Java' ? 'selected' : '' %>>Java</option>
                  <option <%= blog.genre === 'Just Chatting' ? 'selected' : '' %>>Just Chatting</option>
+                 <option <%= blog.genre === 'C' ? 'selected' : '' %> >C</option>
+                 <option <%= blog.genre === 'C++' ? 'selected' : '' %> >C++</option>
+                 <option <%= blog.genre === 'Python' ? 'selected' : '' %>>Python</option>
+                 <option <%= blog.genre === 'Haskell' ? 'selected' : '' %>>Haskell</option>
+                 <option <%= blog.genre === 'Lisp' ? 'selected' : '' %>>Lisp</option>
+                 <option <%= blog.genre === 'Eiffel' ? 'selected' : '' %>>Eiffel</option>
                 </select>
               </div>
               <div class="form-group">
