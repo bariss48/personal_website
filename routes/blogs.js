@@ -27,6 +27,7 @@ router.post("/",isLoggedIn, async (req,res) => {
         date:req.body.date,
         genre: req.body.genre,
         github_link: req.body.github_link,
+        pdf_link: req.body.pdf_link,
         image_link: req.body.image_link,
     } 
      try {
@@ -95,6 +96,7 @@ router.post("/:id/edit", async (req,res) => {
             code_2: req.body.code_2,
             read_min : req.body.read_min,
             github_link: req.body.github_link,
+            pdf_link: req.body.pdf_link,
             genre,
             image_link: req.body.image_link
         }

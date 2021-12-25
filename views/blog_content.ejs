@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./highlightjs/dracula.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="/js/main.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="/css/default.css">
 	<style type="text/css">
@@ -63,6 +64,8 @@
 							<h3><%= blog.title  %> </h3>
 							<p>Read Min : <%= blog.read_min  %> Minute </p>
 							<p><a href=<%= blog.github_link  %>>Github Link : (Click)</a></p>
+							<p>PDF-(Document) :</p>
+							<a href="<%= blog.pdf_link %> "><i class="fa fa-file-pdf-o" style="font-size:36px; color:rgb(77, 179, 238)"></i></a>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
 						</div>
@@ -73,6 +76,7 @@
     </section>
 	<section class="s1">	
 	<div class="main-container">
+		<p> <br> </p>
 		<h3> <%= blog.title %> </h3>
 		<p><%= blog.description %> </p>
 		<div class="container-code">
