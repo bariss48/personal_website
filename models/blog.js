@@ -15,6 +15,7 @@ const blogSchema = new mongoose.Schema({
      date: Date,
      genre: String,
      image_link: String,
+     image_link_2: String,     
      owner:{
           id:{
              type: mongoose.Schema.Types.ObjectId,

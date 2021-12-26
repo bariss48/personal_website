@@ -64,7 +64,6 @@
 							<h3><%= blog.title  %> </h3>
 							<p>Read Min : <%= blog.read_min  %> Minute </p>
 							<p><a href=<%= blog.github_link  %>>Github Link : (Click)</a></p>
-							<p>PDF-(Document) :</p>
 							<a href="<%= blog.pdf_link %> "><i class="fa fa-file-pdf-o" style="font-size:36px; color:rgb(77, 179, 238)"></i></a>
 							<div id="corner-br" class="corner"></div>
 							<div id="corner-bl" class="corner"></div>
@@ -90,7 +89,8 @@
 		<span id="copy-success">Code copied! -_-</span>
 		 </div>
 		 <p><%= blog.description_2 %> </p>
-		 <p> <br> </p>
+		 <p> <br> </p>		 
+		 <!-- 
 		 <div class="container-code">
 			<p class="language" id="language-copy"><%= blog.genre %></p>
 			<div class="code-wrapper">
@@ -100,6 +100,12 @@
 			<button id="copy-button">Copy</button>
 			</div>
 			<span id="copy-success">Code copied! -_-</span>
+			 </div>
+			 -->
+			 <div class="container-code">
+				<div class="code-wrapper">
+					<img id="content_img" src="<%= blog.image_link_2  %> ">
+				</div>
 			 </div>
     </div>
    </section>

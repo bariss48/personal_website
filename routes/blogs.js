@@ -98,7 +98,8 @@ router.post("/:id/edit", async (req,res) => {
             github_link: req.body.github_link,
             pdf_link: req.body.pdf_link,
             genre,
-            image_link: req.body.image_link
+            image_link: req.body.image_link,
+            image_link_2: req.body.image_link_2
         }
         try {
           const blog = await Blog.findByIdAndUpdate(req.params.id, blogBody, {new: true}).exec();
