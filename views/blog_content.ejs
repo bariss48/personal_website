@@ -78,6 +78,7 @@
 		<p> <br> </p>
 		<h3> <%= blog.title %> </h3>
 		<p><%= blog.description %> </p>
+		<div class="main-container">
 		<div class="container-code">
 		<p class="language" id="language-copy"><%= blog.genre %></p>
 		<div class="code-wrapper">
@@ -88,6 +89,7 @@
 	    </div>
 		<span id="copy-success">Code copied! -_-</span>
 		 </div>
+		</div>
 		 <p><%= blog.description_2 %> </p>
 		 <p> <br> </p>		 
 		 <!-- 
@@ -102,11 +104,13 @@
 			<span id="copy-success">Code copied! -_-</span>
 			 </div>
 			 -->
+			 <div class="main-container">
 			 <div class="container-code">
 				<div class="code-wrapper">
 					<img id="content_img" src="<%= blog.image_link_2  %> ">
 				</div>
 			 </div>
+			</div>
     </div>
    </section>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
