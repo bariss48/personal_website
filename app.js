@@ -55,6 +55,7 @@ app.use((req,res,next) => {
     next();
 });
 
+
 app.use("/",mainRoute);
 app.use("/",auth_route);
 app.use("/blogs",blogs_route);
